@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            padding: 10px 14px;
+            background-color: red;
+            border: 2px solid;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <h3>Heading</h3>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem repellendus non placeat corporis
+            accusantium, quis dolore laboriosam, architecto numquam obcaecati perspiciatis? Ullam quos unde maxime.
+            Consectetur praesentium officia optio aut architecto inventore totam dicta repellendus neque, quisquam, non
+            doloribus amet cum animi cumque aliquid eaque modi ratione, dolores accusantium. Consectetur autem libero
+            adipisci enim eveniet aut, accusantium animi impedit consequatur obcaecati sit illo, et, assumenda
+            dignissimos
+            nemo. Eos, magnam quis aliquid voluptate obcaecati dignissimos natus sapiente consequatur nihil non officiis
+            quod, harum reprehenderit quia tenetur quas, dolorem laborum exercitationem repellendus nam dolore velit
+            error
+            hic. Ullam velit sit possimus voluptatem.</p>
+    </div>
+    <button id="btn" onclick="test()">Show/Hide</button> -->
+
+    <!-- input events -->
+    <form action="">
+        <input type="text" id="myInput">
+    </form>
+
+    <script>
+        let textBox = document.getElementById("myInput");
+        // textBox.addEventListener("focus", myFocus);
+        // textBox.addEventListener("blur", myBlur);
+        // textBox.addEventListener("input", myInput);
+        textBox.addEventListener("change", myChange);
+        function myFocus() {
+            textBox.style.backgroundColor = "yellow";
+        }
+        function myBlur() {
+            textBox.style.backgroundColor = "green";
+        }
+        function myInput() {
+            console.log(this.value);
+        }
+        function myChange() {
+            console.log(this.value);
+        }
+        // let para = document.getElementById("para");
+        // para.addEventListener("mouseover", function run() {
+        //     console.log("Mouse Inside");
+        // });
+        // para.addEventListener("mouseout", function run() {
+        //     console.log("Mouse Outside");
+        // });
+        function test() {
+            // let btn = document.getElementById("btn");
+            // btn.style.backgroundColor = "red";
+
+
+            // if (para.style.display != "none") { // the paragraph is visible
+            //     para.style.display = "none"; // make it invisible
+            // }
+            // else {
+            //     para.style.display = "block" // make it visible
+            // }
+            // if (para.style.visibility != "hidden") { // the paragraph is visible
+            //     para.style.visibility = "hidden"; // make it invisible
+            // }
+            // else {
+            //     para.style.visibility = "visible"; // make it visible
+            // }
+        }
+
+    </script>
+    <script src="/js/events.js"></script>
+</body>
+
+</html>
